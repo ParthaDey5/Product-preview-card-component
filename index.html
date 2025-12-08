@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+      
+.fraunces-700 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+}
+
+
+      .montserrat {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+
+      html {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1vw;
+      }
+
+      .Green500 {
+        color: hsl(158, 36%, 37%);
+      }
+      .Green700 {
+        background-color: hsl(158, 42%, 18%);
+      }
+      .Grey {
+        color: hsl(228, 12%, 48%);
+      }
+      .Cream {
+        background-color: hsl(30, 38%, 92%);
+      }
+    </style>
+  </head>
+  <body
+    class="max-w-screen lg:aspect-[1440/800] aspect-[375/1002] Cream flex lg:items-center justify-center"
+  >
+    
+    <div
+      class="lg:w-165 w-[93rem] aspect-[10/7.5] flex lg:flex-row flex-col lg:rounded-[0.6rem] rounded-[3rem] lg:mt-0 mt-85 overflow-hidden"
+    >
+      <div class="lg:w-1/2 w-full">
+        <img
+          src="./images/image-product-desktop.jpg"
+          class="w-full lg:block hidden"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="./images/image-product-mobile.jpg"
+          class="w-full lg:hidden"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="bg-white lg:w-1/2 w-full lg:p-[2.2rem] p-[8rem]">
+        <h1
+          class="uppercase montserrat font-semibold lg:text-[0.85rem] text-[3.4rem] lg:tracking-[0.3rem] tracking-[1.3rem] Grey"
+        >
+          Perfume
+        </h1>
+        <h2
+          class="fraunces-700 whitespace-nowrap lg:mt-5 mt-23 lg:text-[2.2rem] text-[8.8rem] lg:tracking-[0.188rem] tracking-[0.65rem] lg:leading-[2.2rem] leading-[9rem]"
+        >
+          Gabrielle <br class="lg:block hidden" />Essence<br
+            class="lg:hidden"
+          />
+          Eau <br class="lg:block hidden" />De Parfum
+        </h2>
+        <p
+          class="montserrat font-semibold Grey lg:mt-7 mt-22 lg:text-[1rem] text-[4rem] tracking-tight"
+        >
+          A floral, solar and voluptuous<br />
+          interpretation composed by Olivier Polge, Perfumer-Creator for the
+          House of CHANEL.
+        </p>
+        <div class="lg:mt-7 mt-17 lg:gap-4 gap-14 flex items-center">
+          <span
+            class="fraunces-700 Green500 lg:text-[2.1rem] text-[8.3rem] tracking-widest"
+            >$149.99</span
+          >
+          <span
+            class="line-through fraunces font-bold Grey lg:text-[1rem] text-[3.6rem]"
+            >$169.99</span
+          >
+        </div>
+        <button
+          class="montserrat cursor-pointer font-bold Green700 lg:mt-6 mt-18 lg:w-65 w-305 lg:h-13 h-50 lg:rounded-[0.5rem] rounded-[2rem] text-white lg:text-[0.92rem] text-[3.6rem] lg:gap-4 gap-12 flex items-center justify-center"
+        >
+          <img
+            src="./images/icon-cart.svg"
+            class="lg:w-4 w-17"
+            alt=""
+            srcset=""
+          />
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
